@@ -1,0 +1,6 @@
+name: iOS Template
+author: Shota Shimazu <hornet.live.mf@gmail.com>
+multiple: true
+selection:
+  - ./SwiftUI+SceneDelegate
+  - ./UIKit+SceneDelegate
