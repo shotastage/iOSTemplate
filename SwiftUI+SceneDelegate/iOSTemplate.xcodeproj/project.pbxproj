@@ -15,6 +15,7 @@
 		597DC7302716EA5100910431 /* iOSTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC72F2716EA5100910431 /* iOSTemplateTests.swift */; };
 		597DC73A2716EA5100910431 /* iOSTemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC7392716EA5100910431 /* iOSTemplateUITests.swift */; };
 		597DC73C2716EA5100910431 /* iOSTemplateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DC73B2716EA5100910431 /* iOSTemplateUITestsLaunchTests.swift */; };
+		59B88CC22717CAD400859E7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B88CC12717CAD400859E7E /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		597DC7352716EA5100910431 /* iOSTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		597DC7392716EA5100910431 /* iOSTemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTemplateUITests.swift; sourceTree = "<group>"; };
 		597DC73B2716EA5100910431 /* iOSTemplateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTemplateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		59B88CC12717CAD400859E7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				597DC7212716EA5100910431 /* Assets.xcassets */,
 				597DC7232716EA5100910431 /* LaunchScreen.storyboard */,
 				597DC7262716EA5100910431 /* Info.plist */,
+				59B88CC12717CAD400859E7E /* ContentView.swift */,
 			);
 			path = iOSTemplate;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				597DC71D2716EA5100910431 /* ViewController.swift in Sources */,
+				59B88CC22717CAD400859E7E /* ContentView.swift in Sources */,
 				597DC7192716EA5100910431 /* AppDelegate.swift in Sources */,
 				597DC71B2716EA5100910431 /* SceneDelegate.swift in Sources */,
 			);
