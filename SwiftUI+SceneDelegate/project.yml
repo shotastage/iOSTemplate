@@ -1,4 +1,4 @@
-name: UIKitTemplate
+name: SwiftUITemplate
 #packages:
 #  KeychainAccess:
 #    url: https://github.com/kishikawakatsumi/KeychainAccess.git
@@ -9,24 +9,24 @@ deploymentTarget: "13.0"
 attributes:
   ORGANIZATIONNAME: "Shota Shimazu"
 targets:
-  UIKitTemplate:
+  SwiftUITemplate:
     type: application
     platform: iOS
     deploymentTarget: "13.0"
     sources:
-      - iOSTemplate
+      - SwiftUITemplate
     settings:
       base:
         MARKETING_VERSION: 0.0.1
         CURRENT_PROJECT_VERSION: 1
         PRODUCT_BUNDLE_IDENTIFIER: com.shotach.ios-template
-        INFOPLIST_FILE: iOSTemplate/Info.plist
+        INFOPLIST_FILE: SwiftUITemplate/Info.plist
         SUPPORTS_MACCATALYST: YES
         "IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]": 14.2
     scheme:
       testTargets:
-        - iOSTemplateTests
-        - iOSTemplateUITests
+        - SwiftUITemplateTests
+        - SwiftUITemplateTests
     #dependencies:
       #- target: SampleFramework
       #- sdk: MapKit.framework
@@ -34,12 +34,12 @@ targets:
   Tests:
     type: bundle.unit-test
     platform: iOS
-    sources: iOSTemplateTests
+    sources: SwiftUITemplateTests
     dependencies:
-      - target: iOSTemplate
+      - target: SwiftUITemplateTests
   UITests:
     type: bundle.ui-testing
     platform: iOS
-    sources: iOSTemplateUITests
+    sources: SwiftUITemplateUITests
     dependencies:
-      - target: iOSTemplate
+      - target: SwiftUITemplateUITests
