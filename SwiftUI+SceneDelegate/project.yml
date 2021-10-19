@@ -9,7 +9,7 @@ deploymentTarget: "13.0"
 attributes:
   ORGANIZATIONNAME: "Shota Shimazu"
 targets:
-  Bhaa:
+  UIKitTemplate:
     type: application
     platform: iOS
     deploymentTarget: "13.0"
@@ -28,7 +28,7 @@ targets:
         - iOSTemplateTests
         - iOSTemplateUITests
     #dependencies:
-      #- target: BhaaSurface
+      #- target: SampleFramework
       #- sdk: MapKit.framework
       #- package: KeychainAccess
   Tests:
