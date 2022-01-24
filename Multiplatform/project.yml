@@ -1,0 +1,45 @@
+name: UIKitTemplate
+#packages:
+#  KeychainAccess:
+#    url: https://github.com/kishikawakatsumi/KeychainAccess.git
+#    exactVersion: 4.2.2
+options:
+  bundleIdPrefix: com.shotach
+deploymentTarget: "13.0"
+attributes:
+  ORGANIZATIONNAME: "Shota Shimazu"
+targets:
+  UIKitTemplate:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources:
+      - UIKitTemplate
+    settings:
+      base:
+        MARKETING_VERSION: 0.0.1
+        CURRENT_PROJECT_VERSION: 1
+        PRODUCT_BUNDLE_IDENTIFIER: com.shotach.ios-template
+        INFOPLIST_FILE: UIKitTemplate/Info.plist
+        SUPPORTS_MACCATALYST: YES
+        "IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]": 14.2
+    scheme:
+      testTargets:
+        - UIKitTemplateTests
+        - UIKitTemplateTests
+    #dependencies:
+      #- target: SampleFramework
+      #- sdk: MapKit.framework
+      #- package: KeychainAccess
+  UIKitTemplateTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: UIKitTemplateTests
+    dependencies:
+      - target: UIKitTemplate
+  UIKitTemplateUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: UIKitTemplateUITests
+    dependencies:
+      - target: UIKitTemplate
