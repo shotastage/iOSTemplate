@@ -1,4 +1,4 @@
-name: UIKitTemplate
+name: TEMPLATE
 #packages:
 #  KeychainAccess:
 #    url: https://github.com/kishikawakatsumi/KeychainAccess.git
@@ -9,7 +9,7 @@ deploymentTarget: "13.0"
 attributes:
   ORGANIZATIONNAME: "Shota Shimazu"
 targets:
-  UIKitTemplate:
+  TEMPLATE:
     type: application
     platform: iOS
     deploymentTarget: "13.0"
@@ -31,12 +31,12 @@ targets:
       #- target: SampleFramework
       #- sdk: MapKit.framework
       #- package: KeychainAccess
-  UIKitTemplateTests:
+  Tests iOS:
     type: bundle.unit-test
     platform: iOS
-    sources: UIKitTemplateTests
+    sources: Tests iOS
     dependencies:
-      - target: UIKitTemplate
+      - target: TEMPLATE
   UIKitTemplateUITests:
     type: bundle.ui-testing
     platform: iOS
